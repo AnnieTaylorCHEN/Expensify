@@ -11,7 +11,8 @@
     "test": "jest --config=jest.config.json",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "author": "Annie Taylor CHEN",
   "license": "ISC",
