@@ -1,5 +1,5 @@
 const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
@@ -13,7 +13,9 @@ module.exports = {
         new MiniCssExtractPlugin({ 
             filename: "styles.css", 
             chunkFilename: "[id].css"}),
-        new CleanWebpackPlugin(), 
+        // new CleanWebpackPlugin({
+        //     exclude: ["index.html", "images/*"],
+        // })
       ],
     module: {
         rules: [{

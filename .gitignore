@@ -1,5 +1,5 @@
 node_modules
-public/bundle.js
 public/bundle.js.map
-public/styles.css
+public/bundle.js
 public/styles.css.map
+public/styles.css
