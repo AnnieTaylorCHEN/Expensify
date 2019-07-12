@@ -7,11 +7,10 @@ export const Header = ({ startLogout }) => (
     <div>
         <header>
             <h1>Expensify</h1>
+            <NavLink to="/dashboard" activeClassName="is-active">Dashboard</NavLink>
+            <NavLink to="/create" activeClassName="is-active">Create</NavLink>
+            <button onClick={startLogout} >Logout</button>
         </header>
-        <NavLink to="/" activeClassName="is-active" exact >Home</NavLink>
-        <NavLink to="/create" activeClassName="is-active">Create</NavLink>
-        <NavLink to="/help" activeClassName="is-active">Help</NavLink>
-        <button onClick={startLogout} >Logout</button>
     </div>
 )
 
