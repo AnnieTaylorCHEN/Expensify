@@ -1,9 +1,16 @@
-body {
-    font-family: Helvetica, Arial, sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 1.6rem;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color:$dark-gray;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    line-height: 1.6;
 }
 
 button {

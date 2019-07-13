@@ -7,6 +7,9 @@ import { Provider } from 'react-redux'
 import AppRouter, { history } from './routers/AppRouter'
 import configureStore from './store/configureStore'
 
+//components
+import Loader from './components/Loader'
+
 //function
 import { startSetExpenses } from './actions/expenses'
 import { login, logout } from './actions/auth'
@@ -36,7 +39,7 @@ const renderApp = () => {
     }
 }
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'))
+ReactDOM.render(<Loader />, document.getElementById('app'))
 
 
 firebase.auth().onAuthStateChanged((user) => {

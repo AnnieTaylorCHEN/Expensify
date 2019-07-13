@@ -1,0 +1,14 @@
+.button {
+    background: $purple;
+    color: white;
+    font-weight: 300;
+    line-height: 1;
+    text-decoration: none;
+    padding: $s-size $m-size;
+    border: none;
+    display: inline-block; 
+}
+
+.button--danger {
+    background: red;
+}
